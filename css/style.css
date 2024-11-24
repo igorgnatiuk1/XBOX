@@ -1,0 +1,430 @@
+/* -------------------BASE------------------------ */
+
+.container {
+  width: 1400px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+button{
+    border: 0;
+    padding: 0;
+
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --accent-color: rgba(141, 216, 61, 1);
+}
+
+
+
+/* ----------------HEADER----------------- */
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(55, 58, 60, 1);
+}
+
+.header__list{
+    display: flex;
+}
+.header__item, .header__acc{
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 250ms linear;
+}
+
+
+.header__link, .header__acc{
+    font-family: Roboto;
+font-size: 16px;
+line-height: 1;
+text-align: left;
+font-weight: 400;
+
+    display: block;
+    padding: 20px 0;
+}
+
+.header__acc{
+    padding: 0;
+}
+.header__item:hover, .header__acc:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__item:not(:last-child){
+    margin-right: 50px;
+}
+.header__image{
+    width: 96px;
+    height: 29px;
+}
+.header__icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.header__account{
+    display: flex;
+}
+
+/* ----------------------HERO----------------------------- */
+
+
+.hero .container{
+    position: relative;
+    width: 1400px;
+    height: 645px;
+    background-color: rgba(85, 72, 72, 0.5);
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero__title{
+    position: absolute;
+    top: 200px;
+    right: 450px;
+    color: white;
+    font-family: Roboto;
+font-size: 36px;
+line-height: 1;
+font-weight: 700;
+
+}
+.hero__title--span{
+    font-family: Roboto;
+font-size: 24px;
+line-height: 1.16;
+font-weight: 500;
+}
+.hero__box{
+    position: absolute;
+    bottom: 200px;
+    right: 270px;
+}
+.hero__button{
+    font-family: Roboto;
+font-size: 16px;
+line-height: 1.31;
+font-weight: 400;
+padding: 9px 19px;
+border-radius: 4px;
+color: white;
+background-color: var(--accent-color);
+transition: box-shadow 250ms linear;
+}
+.hero__button:hover{
+    box-shadow: 0px 0px 20px white;
+}
+.hero__button:last-child{
+    background-color: rgba(104, 108, 111, 1);
+    margin-left: 13px;
+}
+
+/* -----------------ENTERTAINMENT------------------- */
+
+
+/* .entertainment .container{
+    display: flex;
+
+} */
+ .entertainment .container{
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 160px;
+    background-color: rgb(68, 70, 70);
+ }
+ 
+ .entertainment__list{
+    display: flex;
+    justify-content: center;
+ }
+
+.entertainment__image{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 15px;
+}
+.entertainment__item{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+   background-color:  white;
+   overflow: hidden;
+  
+}
+.entertainment__item:not(:last-child){
+    margin-right: 60px;
+}
+.entertainment__title{
+    color: white;
+    font-family: Roboto;
+font-size: 48px;
+line-height: 1;
+font-weight: 700;
+margin-bottom: 45px;
+}
+.entertainment__span{
+    font-family: Roboto;
+    font-size: 36px;
+line-height: 1.16;
+font-weight: 500;
+}
+
+
+/* ----------------CARDS----------------- */
+
+.card__box{
+    width: 318px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__image{
+    display: block;
+}
+.card__text{
+    font-family: Roboto;
+    font-size: 24px;
+line-height: 1.16;
+text-align: left;
+font-weight: 500;
+
+}
+
+.card__link{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    color: white;
+      width: 278px;
+      height: 60px;
+      font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: left;
+  font-weight: 40px;
+  transition: box-shadow 250ms linear;
+ 
+   }
+   .card__link:hover{
+    box-shadow: 0px 0px 20px var(--accent-color);
+   }
+   .card__thumb{
+  
+      padding: 20px;
+      text-align: start;
+  }
+  .card__name{
+      margin-bottom: 13px;
+      font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.16;
+  font-weight: 400;
+  }
+
+/* -------------------GAMES--------------------- */
+
+.games .container{
+    height: 880px;
+    background-color: rgb(139, 133, 133);
+    background-image: url(../images/Rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+.games__title{
+    color: white;
+    padding-top: 100px;
+    font-family: Roboto;
+    font-size: 36px;
+line-height: 1.16;
+font-weight: 500;
+margin-bottom: 53px;
+}
+.games__list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 74px;
+}
+.games__item{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+   background-color:  white;
+   overflow: hidden;
+}
+
+
+.games__item:not(:last-child){
+    margin-right: 30px;
+
+}
+.games__button{
+    font-family: Roboto;
+font-size: 21px;
+line-height: 1;
+font-weight: 400;
+
+    padding: 16px 47px;
+    border-radius: 4px;
+    background-color: rgba(104, 108, 111, 1);
+    color: white;
+    transition: box-shadow 250ms linear;
+}
+.games__button:hover{
+    box-shadow: 0px 0px 20px white;
+}
+
+
+
+
+
+
+
+/* ---------------DESIGN------------- */
+.design .container{
+    height: 480px;
+    background-color: rgb(203, 210, 216);
+    background-image: url(../images/joystick.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.design__title{
+    color: white;
+    font-family: Roboto;
+font-size: 48px;
+line-height: 1.16;
+font-weight: 700;
+margin-bottom: 10px;
+padding-top: 114px;
+}
+
+.design__text{
+    font-family: Roboto;
+font-size: 24px;
+line-height: 1.16;
+font-weight: 400;
+color: white;
+width: 500px;
+margin-bottom: 37px;
+
+}
+.design__button{
+    font-family: Roboto;
+font-size: 16px;
+line-height: 1.31;
+font-weight: 400;
+    background-color: rgba(104, 108, 111, 1);
+    padding: 20px 50px;
+    border-radius: 4px;
+    color: white;
+    transition: box-shadow 250ms linear;
+}
+.design__button:hover{
+    box-shadow: 0px 0px 20px rgb(124, 122, 122);
+}
+
+.design__button:last-child{
+    background-color: var(--accent-color);
+    padding: 20px 23px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+/* ---------------------FOOTER--------------- */
+
+.footer .container{
+
+    padding-top: 58px;
+    padding-bottom: 40px;
+    background-color: rgba(55, 58, 60, 1);
+   
+}
+
+.footer__title{
+    font-family: Roboto;
+font-size: 18px;
+line-height: 1.31;
+font-weight: 500px;
+color: var(--accent-color);
+margin-bottom: 34px;
+
+}
+.footer__main{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+.footer__link{
+    font-family: Roboto;
+font-size: 14px;
+line-height: 1.17;
+font-weight: 400px;
+color: rgba(255, 255, 255, 1);
+
+}
+.footer__item:not(:last-child){
+    margin-bottom: 30px;
+}
+.footer__text{
+    font-family: Roboto;
+font-size: 16px;
+line-height: 1.12;
+font-weight: 400px;
+color: rgba(255, 255, 255, 1);
+}
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.network__list{
+    display: flex;
+}
+
+.network__item:not(:last-child){
+margin-right: 20px;
+}
+.network__icon{
+    width: 20px;
+    height: 20px;
+}
