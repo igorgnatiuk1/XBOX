@@ -9,164 +9,208 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <title>XBOX</title>
   </head>
   <body>
     <header class="header">
-        <svg class="header__image">
-            <use></use>
-        </svg>
+      <div class="container">
+        <a href="./index.html"
+          ><svg class="header__image">
+            <use href="./images/sprite.svg#icon-xbox"></use></svg
+        ></a>
         <ul class="header__list">
-            <li class="header__item">Games</li>
-            <li class="header__item">Consoles</li>
-            <li class="header__item">Community</li>
+          <li class="header__item"><a class="header__link">Games</a></li>
+          <li class="header__item"><a class="header__link">Consoles</a></li>
+          <li class="header__item"><a class="header__link">Community</a></li>
         </ul>
         <div class="header__account">
-            <svg class="header__icon">
-                <use></use>
-            </svg>
-            <p>My XBOX</p>
+          <svg class="header__icon">
+            <use href="./images/sprite.svg#icon-Shape"></use>
+          </svg>
+          <p class="header__acc">My XBOX</p>
         </div>
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Star Wars <span>Battlefront II</span></h1>
-            </div>
-            <button class="hero__button">Watch Trailer</button>
-            <button class="hero__button">Explore Games</button>
-        </section>
-        <section class="entertainment">
-            <diiv class="container">
-                <h2 class="entertainment__title">The best value <span>in games and entertainment</span> </h2>
-            </diiv>
-            <ul class="entertainment__list">
-                <li class="entertainment__item">
-                    <article>
-                        <img src="" alt="" class="entertainment__image">
-                        <h3 class="entertainment__name">XBOX ONE X</h3>
-                        <p class="entertainment__text">Faster Processing
-                            Smoother Gameplay</p>
-                        <a href="" class="entertainment__link">Explore Consoles & Accessories</a>
-                    </article>
-                </li>
-                <li class="entertainment__item">
-                    <article>
-                        <img src="" alt="" class="entertainment__image">
-                        <h3 class="entertainment__name">Free Games Every Month</h3>
-                        <p class="entertainment__text">Get up to $700 in 
-                            free games</p>
-                        <a href="" class="entertainment__link">Get Free Games</a>
-                    </article>
-                </li>
-                <li class="entertainment__item">
-                    <article>
-                        <img src="" alt="" class="entertainment__image">
-                        <h3 class="entertainment__name">mixer Streaming</h3>
-                        <p class="entertainment__text">The Next Generation
-                            Of Life Game Streaming</p>
-                        <a href="" class="entertainment__link">Start Watching mixer</a>
-                    </article>
-                </li>
-            </ul>
-        </section>
-        <section class="games">
-            <div class="container">
-                <h2 class="games__title">Exclusive games on XBOX</h2>
-                <ul class="games__list">
-                    <li class="games__item">
-                        <article>
-                            <img src="" alt="" class="games__image">
-                            <h3 class="games__name">Call of Duty: WWII</h3>
-                            <p class="games__text">The C.O.D.E. Bravery Pack
-                                is now available in WWII</p>
-                            <a href="" class="games__link">See Details</a>
-                        </article>
-                    </li>
-                    <li class="games__item">
-                        <article>
-                            <img src="" alt="" class="games__image">
-                            <h3 class="games__name">Destiny 2</h3>
-                           
-                            <a href="" class="games__link">See Details</a>
-                        </article>
-                    </li>
-                    <li class="games__item">
-                        <article>
-                            <img src="" alt="" class="games__image">
-                            <h3 class="games__name">STEEP</h3>
-                          
-                            <a href="" class="games__link">See Details</a>
-                        </article>
-                    </li>
-                    <li class="games__item">
-                        <article>
-                            <img src="" alt="" class="games__image">
-                            <h3 class="games__name">Forza Motorsport 7</h3>
-                          
-                            <a href="" class="games__link">See Details</a>
-                        </article>
-                    </li>
-                   
-                </ul>
-                <button class="games__button">XBOX Store</button>
-            </div>
-        </section>
-        <section class="design">
-            <div class="container">
-                <h2 class="design__title">Xbox Design Lab</h2>
-                <p class="design__text">Make yours one in a billion with new colors, metallic finishes and rubberized grips.</p>
-                <button type="button" class="design__button">Design Yours</button>
-                <button type="button" class="design__button">Explore Consoles & Accessories</button>
-            </div>
-        </section>
+      <section class="hero hero__main">
+        <h1 class="hero__title">
+          Star Wars <br />
+          <span class="hero__title--span">Battlefront II</span>
+        </h1>
+        <div class="hero__box">
+          <button class="button">Watch Trailer</button>
+          <button class="button">Explore Games</button>
+        </div>
+      </section>
+      <section class="entertainment">
+        <div class="container">
+          <svg class="entertainment__image">
+            <use href="./images/sprite.svg#icon-xbox-icon"></use>
+          </svg>
+          <h2 class="entertainment__title">
+            The best value <br />
+            <span class="entertainment__span">in games and entertainment</span>
+          </h2>
+
+          <ul class="entertainment__list">
+            <li class="entertainment__item">
+              <article class="card">
+                <div class="card__box">
+                  <img src="./images/xbox-one.jpg" alt="xbox" class="card__image" />
+                </div>
+                <div class="card__thumb">
+                  <h3 class="card__name">XBOX ONE X</h3>
+                  <p class="card__text">Faster Processing Smoother Gameplay</p>
+                  <a href="" class="card__link">Explore Consoles & Accessories</a>
+                </div>
+              </article>
+            </li>
+            <li class="entertainment__item">
+              <article class="card">
+                <div class="card__box">
+                  <img src="./images/mixer.jpg" alt="logo mixer" class="card__image" />
+                </div>
+                <div class="card__thumb">
+                  <h3 class="card__name">Free Games Every Month</h3>
+                  <p class="card__text">Get up to $700 in free games</p>
+                  <a href="" class="card__link">Get Free Games</a>
+                </div>
+              </article>
+            </li>
+            <li class="entertainment__item">
+              <article class="card">
+                <div class="card__box">
+                  <img src="./images/gold.jpg" alt="logo games with gold" class="card__image" />
+                </div>
+                <div class="card__thumb">
+                  <h3 class="card__name">mixer Streaming</h3>
+                  <p class="card__text">The Next Generation Of Life Game Streaming</p>
+                  <a href="" class="card__link">Start Watching mixer</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="games">
+        <div class="container">
+          <h2 class="games__title">Exclusive games on XBOX</h2>
+          <ul class="games__list">
+            <li class="games__item">
+              <article class="card">
+                <div class="card__box">
+                  <img src="./images/call-of-duti.jpg" alt="Call of Duty" class="card__image" />
+                </div>
+                <div class="card__thumb">
+                  <h3 class="card__name">Call of Duty: WWII</h3>
+                  <p class="card__text">The C.O.D.E. Bravery Pack is now available in WWII</p>
+                  <a href="./callOfDuty.html" class="card__link">See Details</a>
+                </div>
+              </article>
+            </li>
+            <li class="games__item">
+              <article class="card">
+                <div class="card__box">
+                  <img src="./images/destiny.jpg" alt="Destiny 2" class="card__image" />
+                </div>
+                <div class="card__thumb">
+                  <h3 class="card__name">Destiny 2</h3>
+
+                  <a href="" class="card__link">Start Watching mixer</a>
+                </div>
+              </article>
+            </li>
+            <li class="games__item">
+              <article class="card">
+                <div class="card__box">
+                  <img src="./images/steep.jpg" alt="STEEP" class="card__image" />
+                </div>
+                <div class="card__thumb">
+                  <h3 class="card__name">STEEP</h3>
+
+                  <a href="" class="card__link">Start Watching mixer</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="games__button">XBOX Store</button>
+        </div>
+      </section>
+      <section class="design">
+        <div class="container">
+          <h2 class="design__title">Xbox Design Lab</h2>
+          <p class="design__text">
+            Make yours one in a billion with new colors, metallic finishes and rubberized grips.
+          </p>
+          <button type="button" class="button design__button">Design Yours</button>
+          <button type="button" class="button design__button">
+            Explore Consoles & Accessories
+          </button>
+        </div>
+      </section>
     </main>
-    <footer>
-        <div class="communications">
-            <h3 class="communications__title"> XBOX</h3>
-            <ul class="communications__list">
-                <li class="communications__item"><a href="" class="communications__link"></a ></li>
-                <li class="communications__item"><a href="" class="communications__link"></a ></li>
-                <li class="communications__item"><a href="" class="communications__link"></a ></li>
-                <li class="communications__item"><a href="" class="communications__link"></a ></li>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__main">
+          <li>
+            <h3 class="footer__title">XBOX</h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Support</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy & cookies </a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms of use </a></li>
             </ul>
-        </div>
-        <div class="developers">
-            <h3 class="developers__title"> </h3>
-            <ul class="developers__list">
-                <li class="developers__item"><a href="" class="developers__link"></a ></li>
-                <li class="developers__item"><a href="" class="developers__link"></a ></li>
-                <li class="developers__item"><a href="" class="developers__link"></a ></li>
-                <li class="developers__item"><a href="" class="developers__link"></a ></li>
+          </li>
+          <li>
+            <h3 class="footer__title">Developers</h3>
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Games</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Windows 10</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Creators Program</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Designed for XBOX</a></li>
             </ul>
-        </div>
-        <div class="network">
-            <h3 class="network__title"> </h3>
+          </li>
+          <li>
+            <h3 class="footer__title">Follow Us</h3>
             <ul class="network__list">
-                <li class="network__item">
-                    <a href="" class="network__link">
-                        <svg class="network__icon">
-                            <use></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="network__item">
-                    <a href="" class="network__link">
-                        <svg class="network__icon">
-                            <use></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="network__item">
-                    <a href="" class="network__link">
-                        <svg class="network__icon">
-                            <use></use>
-                        </svg>
-                    </a>
-                </li>
+              <li class="network__item">
+                <a href="" class="network__link">
+                  <svg class="network__icon">
+                    <use
+                      href="./images/sprite.svg#icon-Instagram"
+                      aria-label="icon Instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network__item">
+                <a href="" class="network__link">
+                  <svg class="network__icon">
+                    <use href="./images/sprite.svg#icon-Twitter" aria-label="icon Twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network__item">
+                <a href="" class="network__link">
+                  <svg class="network__icon">
+                    <use href="./images/sprite.svg#icon-Facebook" aria-label="icon Facebook"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
+          </li>
+        </ul>
+
+        <div class="footer__box">
+          <p class="footer__text">English (United States)</p>
+          <p class="footer__text">&#xa9; Microsoft 2017</p>
         </div>
+      </div>
     </footer>
   </body>
 </html>
